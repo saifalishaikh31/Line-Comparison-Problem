@@ -27,14 +27,19 @@ namespace LineComparison
             resultFirstLine = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             resultSecondLine = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
+            if (resultFirstLine > resultSecondLine)
+            {
+                Console.WriteLine("Length of Line 1 is greater than Line 2");
+            }
+            if (resultFirstLine < resultSecondLine)
+            {
+                Console.WriteLine("Length of Line 2 is greater than Line 1");
+            }
             if (resultFirstLine == resultSecondLine)
             {
-                Console.WriteLine("Length of both Lines are EQUAL "+ resultFirstLine + "=" + resultSecondLine);
+                Console.WriteLine("Length of both Lines are EQUAL");
             }
-            else
-            {
-                Console.WriteLine("Length of both Lines are NOT EQUAL!");
-            }
+           
             
         }
 
