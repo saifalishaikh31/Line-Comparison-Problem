@@ -28,6 +28,7 @@ namespace LineComparison
             resultSecondLine = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
             int status = resultFirstLine.CompareTo(resultSecondLine);
+
             if (status > 0)
             {
                 Console.WriteLine("{0} is greater than {1}", resultFirstLine, resultSecondLine);
